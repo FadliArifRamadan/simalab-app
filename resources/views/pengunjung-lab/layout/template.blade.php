@@ -23,6 +23,13 @@
     <link rel="stylesheet" href="{{ asset('assets/assets/css/components.css') }}">
     <!-- Start GA -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
 </head>
 
 <body>
@@ -47,7 +54,7 @@
                             <div class="d-sm-none d-lg-inline-block">Selamat Datang, {{ Auth::user()->name }}</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="{{ asset('assets/assets/features-profile.html') }}" class="dropdown-item has-icon">
+                            <a href="/pengunjung-lab/profile" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> Profile
                             </a>
                             <div class="dropdown-divider"></div>
