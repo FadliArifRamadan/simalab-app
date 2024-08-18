@@ -52,7 +52,7 @@
                                     </th>
                                     <th>Nam Pengunjung</th>
                                     <th>Nama Usaha/Univ/Sekolah</th>
-                                    <th>Nama Koordinator lab</th>
+                                    <th>Nama Koordinator Lab</th>
                                     <th>Jenis Kegiatan</th>
                                     <th>Tanggal Kegiatan</th>
                                     <th>Waktu Kegiatan</th>

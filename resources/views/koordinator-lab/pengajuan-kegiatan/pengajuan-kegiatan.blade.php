@@ -40,7 +40,7 @@
                                     </th>
                                     <th>Nama Pengunjung</th>
                                     <th>Nama Usaha/Univ/Sekolah</th>
-                                    <th>Nama Koordinator lab</th>
+                                    <th>Nama Koordinator Lab</th>
                                     <th>Jenis Kegiatan</th>
                                     <th>Tanggal Kegiatan</th>
                                     <th>Waktu Kegiatan</th>
@@ -92,8 +92,7 @@
                                                 class="btn btn-success btn-action" title="Done"><i
                                                     class="fas fa-check-double"></i></a>
                                             <a href="/koordinator-lab/dokumen-lab-add?submission_id={{$submission->id }}"
-                                                class="btn btn-primary btn-action {{ ($submission->status == 'Approved'
-                                                || $submission->status == 'Progress' || $submission->status == 'Pending'
+                                                class="btn btn-primary btn-action {{ ($submission->status == 'Approved' || $submission->status == 'Pending'
                                                 || $submission->status == 'Rejected') ? 'disabled' : '' }}"
                                                 title="Tambah">
                                                 <i class="fas fa-book"></i>

@@ -3770,9 +3770,12 @@ body.layout-3 .main-footer {
     width: 100%;
 }
 .main-footer .footer-left {
+    margin-bottom: -7rem;
     float: left;
 }
 .main-footer .footer-right {
+    margin-top: 0.3rem;
+    margin-bottom: -7rem;
     float: right;
 }
 
@@ -3996,4 +3999,23 @@ body:not(.sidebar-mini)
     font-size: 12px;
     background-color: rgb(2, 202, 2);
     color: white;
+}
+
+.socials {
+    margin-top: -2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.socials a {
+    width: 50rem;
+    margin: 1rem;
+}
+
+.links a:hover {
+    color: #6777ef;
+}
+
+.socials i {
+    font-size: 2rem;
 }

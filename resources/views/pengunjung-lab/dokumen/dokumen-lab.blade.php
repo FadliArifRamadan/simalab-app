@@ -36,8 +36,9 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Nama Koor Lab</th>
+                                    <th>Nama Koordinator Lab</th>
                                     <th>Nama Pengunjung</th>
+                                    <th>Nama Usaha/Univ/Sekolah</th>
                                     <th>Jenis Kegiatan</th>
                                     <th>Jenis Dokumen</th>
                                     <th>Aksi</th>
@@ -49,6 +50,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $doc->coordinators->name }}</td>
                                     <td>{{ $doc->visitors->name }}</td>
+                                    <td>{{ $doc->visitors->business_name }}</td>
                                     <td>{{ $doc->activities->activity_type }}</td>
                                     <td>{{ $doc->documents->name }}</td>
                                     <td>

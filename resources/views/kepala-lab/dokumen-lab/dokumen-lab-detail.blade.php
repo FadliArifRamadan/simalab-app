@@ -26,6 +26,8 @@
                     <h5 class="card-title">Detail Dokumen</h5>
                     <p class="card-text"><strong>Nama Koordinator Lab:</strong> {{ $doc->coordinators->name }}</p>
                     <p class="card-text"><strong>Nama Pengunjung:</strong> {{ $doc->visitors->name }}</p>
+                    <p class="card-text"><strong>Nama Usaha/Univ/Sekolah:</strong> {{ $doc->visitors->business_name }}
+                    </p>
                     <p class="card-text"><strong>Jenis Dokumen:</strong> {{ $doc->documents->name }}</p>
                     <p class="card-text"><strong>Deskripsi:</strong> {{ $doc->description }}</p>
                     <a href="{{ url()->previous() }}" class="btn btn-danger">Kembali</a>
