@@ -124,9 +124,13 @@
                             Sudah Punya akun? <a href="/">Login Segera</a>
                         </div>
                         <div class="simple-footer">
-                            Copyright &copy; 2018 <div class="bullet"></div> Design By <a
-                                href="https://nauval.in/">Muhamad
-                                Nauval Azhar</a>
+                            Created by <a href="">Fadli Arif Ramadan</a>. | &copy; 2024.
+                        </div>
+                        <div class="socials">
+                            <a href="https://www.instagram.com/ramadanfadliarif/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/FadliArifRamadan"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/fadli-arif-ramadan-249487246/"><i
+                                    class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
