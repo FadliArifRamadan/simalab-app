@@ -35,11 +35,11 @@
         <form action="dokumen-cetak-add" method="post">
             @csrf
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="name">Nama Dokumen</label>
                     <input type="text" class="form-control" name="name" id="name">
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="description">Deskripsi</label>
                     <input type="text" class="form-control" name="description" id="description">
                 </div>

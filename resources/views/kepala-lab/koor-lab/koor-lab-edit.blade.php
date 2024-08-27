@@ -24,23 +24,23 @@
             @csrf
             @method('PUT')
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="name">Nama</label>
                     <input type="text" class="form-control" name="name" id="name" value="{{ $user->name }}" required>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" name="email" id="email" value="{{ $user->email }}"
                         required>
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" id="password"
                         value="{{ $user->password }}" required>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="roles_id">Role</label>
                     <select name="roles_id" id="roles_id" class="form-control" required>
                         <option value="{{ $user->roles->id }}">{{ $user->roles->name }}</option>

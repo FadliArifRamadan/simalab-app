@@ -25,12 +25,12 @@
             @csrf
             @method('PUT')
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="name">Nama Dokumen</label>
                     <input type="text" class="form-control" name="name" id="name" value="{{ $document->name }}"
                         required>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="description">Deskripsi</label>
                     <input type="text" class="form-control" name="description" id="description"
                         value="{{ $document->description }}" required>

@@ -35,21 +35,21 @@
         <form action="koor-lab-add" method="post">
             @csrf
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="name">Nama</label>
                     <input type="text" class="form-control" name="name" id="name">
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" name="email" id="email">
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" id="password">
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="roles_id">Role</label>
                     <select name="roles_id" id="roles_id" class="form-control">
                         <option value="">Select</option>

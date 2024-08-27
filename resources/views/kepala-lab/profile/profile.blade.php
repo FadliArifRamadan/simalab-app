@@ -27,19 +27,19 @@
     <form method="POST" action="/kepala-lab/profile/{{ $user->id }}">
         @csrf
         <div class="row">
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="name">Nama</label>
                 <input type="text" class="form-control" id="name" name="name" value="{{ $user->name }}" required>
             </div>
 
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email" value="{{ $user->email }}" required>
             </div>
         </div>
 
         <div class="row">
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="password">Password</label>
                 <div class="input-group">
                     <input type="password" name="password" class="form-control" id="password">
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="password_confirmation">Konfirmasi Password</label>
                 <div class="input-group">
                     <input type="password" name="password_confirmation" class="form-control" id="password_confirmation">

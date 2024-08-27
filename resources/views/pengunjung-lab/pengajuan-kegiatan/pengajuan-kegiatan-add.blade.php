@@ -33,12 +33,12 @@
         <form action="pengajuan-kegiatan-add" method="post">
             @csrf
             <div class="row">
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="users_id">Nama Pengunjung</label>
                     <input type="text" class="form-control" id="users_id" name="users_id" value="{{ $visitors->name }}"
                         readonly required>
                 </div>
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="coordinators_id">Nama Koordinator Lab</label>
                     <select name="coordinators_id" class="form-control" id="coordinators_id">
                         <option value="">Pilih Satu</option>
@@ -47,7 +47,7 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="activities_id">Jenis Kegiatan Lab</label>
                     <select name="activities_id" class="form-control" id="activities_id">
                         <option value="">Pilih Satu</option>

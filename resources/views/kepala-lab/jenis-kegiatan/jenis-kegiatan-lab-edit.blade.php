@@ -25,12 +25,12 @@
             @csrf
             @method('PUT')
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="activity_type">Nama Jenis Kegiatan</label>
                     <input type="text" class="form-control" name="activity_type" id="activity_type"
                         value="{{ $activity->activity_type }}" required>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="description">Deskripsi</label>
                     <input type="text" class="form-control" name="description" id="description"
                         value="{{ $activity->description }}" required>

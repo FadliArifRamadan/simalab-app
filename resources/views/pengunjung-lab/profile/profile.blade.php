@@ -27,12 +27,12 @@
     <form method="POST" action="/pengunjung-lab/profile/{{ $user->id }}">
         @csrf
         <div class="row">
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="name">Nama</label>
                 <input type="text" class="form-control" id="name" name="name" value="{{ $user->name }}" required>
             </div>
 
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="business_name">Nama Usaha/Univ/Sekolah</label>
                 <input type="text" class="form-control" id="business_name" name="business_name"
                     value="{{ $user->business_name }}" required>
@@ -40,20 +40,20 @@
         </div>
 
         <div class="row">
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="identities">No. KTP</label>
                 <input type="number" class="form-control" id="identities" name="identities"
                     value="{{ $user->identities }}" required>
             </div>
 
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email" value="{{ $user->email }}" required>
             </div>
         </div>
 
         <div class="row">
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="password">Password</label>
                 <div class="input-group">
                     <input type="password" name="password" class="form-control" id="password">
@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="form-group col-6">
+            <div class="form-group col-12 col-md-6">
                 <label for="password_confirmation">Konfirmasi Password</label>
                 <div class="input-group">
                     <input type="password" name="password_confirmation" class="form-control" id="password_confirmation">

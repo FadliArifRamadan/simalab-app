@@ -53,13 +53,13 @@
                                 <form method="POST" action="register-pengunjung" class="needs-validation" novalidate="">
                                     @csrf
                                     <div class="row">
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-12 col-md-6">
                                             <label for="name">Nama Pengunjung</label>
                                             <div class="invalid-feedback">Tolong isi nama Anda </div>
                                             <input id="name" type="name" class="form-control" name="name" tabindex="1"
                                                 required autofocus placeholder="Masukan Nama Mahasiswa/Umum">
                                         </div>
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-12 col-md-6">
                                             <label for="business_name">Nama Usaha</label>
                                             <input id="business_name" type="business_name" class="form-control"
                                                 name="business_name" tabindex="1" required autofocus
@@ -70,7 +70,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-12 col-md-6">
                                             <label for="roles_id">Role</label>
                                             <select name="roles_id" id="roles_id" class="form-control" tabindex="1"
                                                 required autofocus>
@@ -83,7 +83,7 @@
                                                 Tolong isi peran Anda
                                             </div>
                                         </div>
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-12 col-md-6">
                                             <label for="identities">No. KTP</label>
                                             <input id="identities" type="number" class="form-control" name="identities"
                                                 tabindex="1" required autofocus placeholder="Masukan No. KTP Anda">
@@ -93,7 +93,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-12 col-md-6">
                                             <label for="email">Email</label>
                                             <input id="email" type="email" class="form-control" name="email"
                                                 tabindex="1" required autofocus placeholder="Masukan Email">
@@ -101,7 +101,7 @@
                                                 Tolong isi email Anda
                                             </div>
                                         </div>
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-12 col-md-6">
                                             <div class="d-block">
                                                 <label for="password" class="control-label">Password</label>
                                             </div>

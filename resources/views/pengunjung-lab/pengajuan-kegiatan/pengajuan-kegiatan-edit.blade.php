@@ -36,12 +36,12 @@
             @csrf
             @method('PUT')
             <div class="row">
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="users_id">Nama Pengunjung</label>
                     <input type="text" class="form-control" id="users_id" name="users_id" value="{{ $visitors->name }}"
                         readonly required>
                 </div>
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="coordinators_id">Nama Koordinator lab</label>
                     <select name="coordinators_id" id="coordinators_id" class="form-control" required>
                         <option value="{{ $activitySubmission->coordinators->id }}">{{
@@ -51,7 +51,7 @@
                         @endforeach
                     </select>
                 </div>
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="activities_id">Jenis Kegiatan Lab</label>
                     <select name="activities_id" id="activities_id" class="form-control" required>
                         <option value="{{ $activitySubmission->activities->id }}">{{

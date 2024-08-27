@@ -31,17 +31,17 @@
             @csrf
             @method('PUT')
             <div class="row">
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="users_id">Nama Koor lab</label>
                     <input type="text" class="form-control" id="users_id" name="users_id"
                         value="{{ $coordinators->name }}" readonly required>
                 </div>
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="visitors_id">Nama Pengunjung</label>
                     <input type="text" class="form-control" id="visitors_id" name="visitors_id"
                         value="{{ $doc->visitors->name }}" readonly required>
                 </div>
-                <div class="form-group col-4">
+                <div class="form-group col-12 col-md-4">
                     <label for="activities_id">Jenis Kegiatan</label>
                     <select name="activities_id" id="activities_id" class="form-control" readonly required>
                         <option value="{{ $doc->activities->id }}">{{ $doc->activities->activity_type }}</option>
@@ -61,12 +61,12 @@
                 </select>
             </div>
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="description">Deskripsi</label>
                     <input type="text" class="form-control" name="description" id="description"
                         value="{{ $doc->description }}" required>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="file_path">Upload</label>
                     <input type="file" class="form-control" name="file_path" id="file_path">
                     @if($doc->file_path)

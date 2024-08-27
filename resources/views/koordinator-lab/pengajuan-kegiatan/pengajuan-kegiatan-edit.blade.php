@@ -40,12 +40,12 @@
                     value="{{ $coordinators->name }}" readonly required>
             </div>
             <div class="row">
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="submission_date">Tanggal pengajuan</label>
                     <input type="date" class="form-control" name="submission_date" id="submission_date"
                         value="{{ $activitySubmission->submission_date }}" min="{{ date('Y-m-d') }}" required>
                 </div>
-                <div class="form-group col-6">
+                <div class="form-group col-12 col-md-6">
                     <label for="submission_time">Waktu Pengajuan</label>
                     <select name="submission_time" id="submission_time" class="form-control" required>
                         <option value="">Pilih Waktu</option>
