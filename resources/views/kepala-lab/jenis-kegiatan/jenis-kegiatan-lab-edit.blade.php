@@ -1,4 +1,4 @@
-@extends('kepala-lab.layout.template')
+{{-- @extends('kepala-lab.layout.template')
 
 @section('title', 'Ubah Jenis Kegiatan')
 
@@ -48,6 +48,80 @@
                 <a href="/kepala-lab/jenis-kegiatan-lab" class="btn btn-danger">Kembali</a>
             </div>
         </form>
+    </div>
+</div>
+@endsection --}}
+
+@extends('kepala-lab.layout.dashboard')
+
+@section('title', 'Ubah Jenis Kegiatan')
+
+@section('content')
+<div class="container-fluid p-0 sm_padding_15px">
+    <div class="row justify-content-center">
+        <div class="white_card card_height_100 mb_30">
+            <div class="white_card_header">
+                @if(Session::has('status'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ Session::get('message') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+                <div class="white_box_tittle list_header">
+                    <h4>Ubah Jenis Kegiatan</h4>
+                    <div class="box_right d-flex lms_block">
+                        <div class="dashboard_breadcam text-end">
+                            <p>
+                                <a href="/kepala-lab/dashboard">Dashboard</a>
+                                <i class="fas fa-caret-right"></i>
+                                Data Master
+                                <i class="fas fa-caret-right"></i>
+                                <a href="/kepala-lab/jenis-kegiatan-lab">Jenis Kegiatan</a>
+                                <i class="fas fa-caret-right"></i>
+                                Ubah Jenis Kegiatan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="white_card_body">
+                <form action="/kepala-lab/jenis-kegiatan-lab-update/{{ $activity->id }}" method="POST">
+                    @csrf
+                    @method('PUT')
+                    <div class="row">
+                        <div class="form-group col-12 col-md-6">
+                            <h6 class="card-subtitle mb-2 mt-3">
+                                Jenis Kegiatan:
+                            </h6>
+                            <input type="text" class="form-control" name="activity_type" id="activity_type"
+                                value="{{ $activity->activity_type }}" required>
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <h6 class="card-subtitle mb-2 mt-3">
+                                Deskripsi:
+                            </h6>
+                            <input type="text" class="form-control" name="description" id="description"
+                                value="{{ $activity->description }}" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h6 class="card-subtitle mb-2 mt-3">
+                            Nama Koordinator:
+                        </h6>
+                        <input type="text" class="form-control" name="coordinator_id" id="coordinator_id"
+                            value="{{ $activity->coordinators->name }}" readonly>
+                        <input type="hidden" name="coordinators_id" value="{{ $activity->coordinators->id }}">
+                    </div>
+
+                    <div class="mt-3">
+                        <button class="btn btn-success" type="submit">Ubah</button>
+                        <a href="/kepala-lab/jenis-kegiatan-lab" class="btn btn-danger">Kembali</a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
